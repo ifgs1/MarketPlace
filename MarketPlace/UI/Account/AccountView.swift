@@ -8,9 +8,9 @@
 
 import SwiftUI
 
-struct AccountView : View {
+struct AccountView: View {
     
-    var body : some View {
+    var body: some View {
         
         VStack(spacing: 20) {
             HStack(spacing: 15) {

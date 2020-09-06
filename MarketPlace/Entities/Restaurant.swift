@@ -6,7 +6,7 @@
 //  Copyright © 2020 Ivan F Garcia S. All rights reserved.
 //
 
-import SwiftUI
+import Foundation
 
 struct Restaurant: Codable {
     var id: Int

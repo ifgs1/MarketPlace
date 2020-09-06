@@ -17,16 +17,19 @@ class Webservice {
                 completion(nil)
                 return
             }
+            
             do {
                 let decoder = JSONDecoder()
                 JSONDecoder().keyDecodingStrategy = .convertFromSnakeCase
                 let response = try decoder.decode(Restaurant.self, from: data)
+                
                 DispatchQueue.main.async {
                     completion(response.categories)
                 }
             } catch {
                 completion(nil)
             }
+            
         }.resume()
     }
 }
